@@ -27,8 +27,8 @@ RUN python -m venv /py && \
         django-user
 
 # Set proper permissions
-#RUN chown -R django-user /app
-#RUN chown -R django-user /py
+RUN chown -R django-user /app
+RUN chown -R django-user /py
 
 ENV PATH="/py/bin:$PATH"
 
